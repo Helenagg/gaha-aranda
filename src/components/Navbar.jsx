@@ -42,48 +42,53 @@ const Navbar = () => {
           <div className='hidden w-full md:block md:w-auto' id='navbar-default'>
             <ul className='flex flex-col p-4 md:p-0 mt-4 border border-gray-100 rounded-lg bg-gray-50 md:flex-row md:space-x-8 rtl:space-x-reverse md:mt-0 md:border-0 md:bg-white dark:bg-gray-800 md:dark:bg-gray-900 dark:border-gray-700'>
               <li>
-                <Link
+              <Link
                   to='/'
-                  className='block py-2 px-3 text-white bg-secondary rounded md:bg-transparent md:text-primary md:hover:text-secondary md:p-0 dark:text-white md:dark:text-primary'
+                  className='relative block py-2 px-3 text-white bg-primary rounded md:rounded-none md:bg-transparent md:text-secondary md:hover:text-primary md:p-0 md:py-2 dark:text-white md:dark:text-primary group'
                   aria-current='page'
                 >
                   Inicio
+                  <span className='absolute left-1/2 bottom-0 w-0 h-0.5 bg-primary transition-all duration-300 group-hover:w-full group-hover:left-0'></span>
                 </Link>
               </li>
               <li>
-                <Link
+              <Link
                   to='/'
-                  className='block py-2 px-3 text-white bg-secondary rounded md:bg-transparent md:text-primary md:hover:text-secondary md:p-0 dark:text-white md:dark:text-primary'
+                  className='relative block py-2 px-3 text-white bg-primary rounded md:rounded-none md:bg-transparent md:text-secondary md:hover:text-primary md:p-0 md:py-2 dark:text-white md:dark:text-primary group'
                   aria-current='page'
                 >
                   Servicios
+                  <span className='absolute left-1/2 bottom-0 w-0 h-0.5 bg-primary transition-all duration-300 group-hover:w-full group-hover:left-0'></span>
                 </Link>
               </li>
               <li>
-                <Link
+              <Link
                   to='/'
-                  className='block py-2 px-3 text-white bg-secondary rounded md:bg-transparent md:text-primary md:hover:text-secondary md:p-0 dark:text-white md:dark:text-primary'
+                  className='relative block py-2 px-3 text-white bg-primary rounded md:rounded-none md:bg-transparent md:text-secondary md:hover:text-primary md:p-0 md:py-2 dark:text-white md:dark:text-primary group'
                   aria-current='page'
                 >
                   Productos
+                  <span className='absolute left-1/2 bottom-0 w-0 h-0.5 bg-primary transition-all duration-300 group-hover:w-full group-hover:left-0'></span>
                 </Link>
               </li>
               <li>
-                <Link
+              <Link
                   to='/'
-                  className='block py-2 px-3 text-white bg-secondary rounded md:bg-transparent md:text-primary md:hover:text-secondary md:p-0 dark:text-white md:dark:text-primary'
+                  className='relative block py-2 px-3 text-white bg-primary rounded md:rounded-none md:bg-transparent md:text-secondary md:hover:text-primary md:p-0 md:py-2 dark:text-white md:dark:text-primary group'
                   aria-current='page'
                 >
                   Nosotros
+                  <span className='absolute left-1/2 bottom-0 w-0 h-0.5 bg-primary transition-all duration-300 group-hover:w-full group-hover:left-0'></span>
                 </Link>
               </li>
               <li>
                 <Link
                   to='/'
-                  className='block py-2 px-3 text-white bg-secondary rounded md:bg-transparent md:text-primary md:hover:text-secondary md:p-0 dark:text-white md:dark:text-primary'
+                  className='relative block py-2 px-3 text-white bg-primary rounded md:rounded-none md:bg-transparent md:text-secondary md:hover:text-primary md:p-0 md:py-2 dark:text-white md:dark:text-primary group'
                   aria-current='page'
                 >
                   Contacto
+                  <span className='absolute left-1/2 bottom-0 w-0 h-0.5 bg-primary transition-all duration-300 group-hover:w-full group-hover:left-0'></span>
                 </Link>
               </li>
             </ul>

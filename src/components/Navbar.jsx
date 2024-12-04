@@ -46,78 +46,89 @@ const Navbar = () => {
                   to='/'
                   className={`relative block py-2 px-3 bg-primary rounded md:rounded-none md:bg-transparent md:hover:text-primary md:p-0 md:py-2 dark:text-white md:dark:text-primary group ${
                     location.pathname === '/'
-                      ? 'after:w-full after:left-0 text-primary'
+                      ? 'text-primary'
                       : 'text-white md:text-secondary'
                   }`}
                   aria-current='page'>
                   Inicio
                   <span
-                    className={`absolute left-1/2 bottom-0 w-0 h-0.5 bg-primary transition-all duration-300 group-hover:w-full group-hover:left-0 ${
-                      location.pathname === '/' ? 'w-full left-0' : ''
+                    className={`absolute bottom-0 h-0.5 bg-primary transition-all duration-300 group-hover:w-full group-hover:left-0 group-hover:translate-x-0 ${
+                      location.pathname === '/'
+                        ? 'w-full left-0 translate-x-0'
+                        : 'w-0 left-1/2 -translate-x-1/2'
                     }`}></span>
                 </Link>
               </li>
               <li>
                 <Link
                   to='/servicios'
-                  className={`relative block py-2 px-3 bg-primary rounded md:rounded-none md:bg-transparent  md:hover:text-primary md:p-0 md:py-2 dark:text-white md:dark:text-primary group ${
+                  className={`relative block py-2 px-3 bg-primary rounded md:rounded-none md:bg-transparent md:hover:text-primary md:p-0 md:py-2 dark:text-white md:dark:text-primary group ${
                     location.pathname === '/servicios'
-                      ? 'after:w-full after:left-0 text-primary'
+                      ? 'text-primary'
                       : 'text-white md:text-secondary'
                   }`}
                   aria-current='page'>
                   Servicios
                   <span
-                    className={`absolute left-1/2 bottom-0 w-0 h-0.5 bg-primary transition-all duration-300 group-hover:w-full group-hover:left-0 ${
-                      location.pathname === '/servicios' ? 'w-full left-0' : ''
+                    className={`absolute bottom-0 h-0.5 bg-primary transition-all duration-300 group-hover:w-full group-hover:left-0 group-hover:translate-x-0 ${
+                      location.pathname === '/servicios'
+                        ? 'w-full left-0 translate-x-0'
+                        : 'w-0 left-1/2 -translate-x-1/2'
                     }`}></span>
                 </Link>
               </li>
               <li>
                 <Link
                   to='/productos'
-                  className={`relative block py-2 px-3 bg-primary rounded md:rounded-none md:bg-transparent  md:hover:text-primary md:p-0 md:py-2 dark:text-white md:dark:text-primary group ${
+                  className={`relative block py-2 px-3 bg-primary rounded md:rounded-none md:bg-transparent md:hover:text-primary md:p-0 md:py-2 dark:text-white md:dark:text-primary group ${
                     location.pathname === '/productos'
-                      ? 'after:w-full after:left-0 text-primary'
+                      ? 'text-primary'
                       : 'text-white md:text-secondary'
                   }`}
                   aria-current='page'>
                   Productos
                   <span
-                    className={`absolute left-1/2 bottom-0 w-0 h-0.5 bg-primary transition-all duration-300 group-hover:w-full group-hover:left-0 ${
-                      location.pathname === '/productos' ? 'w-full left-0' : ''
+                    className={`absolute bottom-0 h-0.5 bg-primary transition-all duration-300 group-hover:w-full group-hover:left-0 group-hover:translate-x-0 ${
+                      location.pathname === '/productos'
+                        ? 'w-full left-0 translate-x-0'
+                        : 'w-0 left-1/2 -translate-x-1/2'
                     }`}></span>
                 </Link>
               </li>
               <li>
+                {' '}
                 <Link
                   to='/nosotros'
-                  className={`relative block py-2 px-3 bg-primary rounded md:rounded-none md:bg-transparent  md:hover:text-primary md:p-0 md:py-2 dark:text-white md:dark:text-primary group ${
+                  className={`relative block py-2 px-3 bg-primary rounded md:rounded-none md:bg-transparent md:hover:text-primary md:p-0 md:py-2 dark:text-white md:dark:text-primary group ${
                     location.pathname === '/nosotros'
-                      ? 'after:w-full after:left-0 text-primary'
+                      ? 'text-primary'
                       : 'text-white md:text-secondary'
                   }`}
                   aria-current='page'>
                   Nosotros
                   <span
-                    className={`absolute left-1/2 bottom-0 w-0 h-0.5 bg-primary transition-all duration-300 group-hover:w-full group-hover:left-0 ${
-                      location.pathname === '/nosotros' ? 'w-full left-0' : ''
+                    className={`absolute bottom-0 h-0.5 bg-primary transition-all duration-300 group-hover:w-full group-hover:left-0 group-hover:translate-x-0 ${
+                      location.pathname === '/nosotros'
+                        ? 'w-full left-0 translate-x-0'
+                        : 'w-0 left-1/2 -translate-x-1/2'
                     }`}></span>
                 </Link>
               </li>
               <li>
                 <Link
                   to='/contacto'
-                  className={`relative block py-2 px-3 bg-primary rounded md:rounded-none md:bg-transparent  md:hover:text-primary md:p-0 md:py-2 dark:text-white md:dark:text-primary group ${
+                  className={`relative block py-2 px-3 bg-primary rounded md:rounded-none md:bg-transparent md:hover:text-primary md:p-0 md:py-2 dark:text-white md:dark:text-primary group ${
                     location.pathname === '/contacto'
-                      ? 'after:w-full after:left-0 text-primary'
+                      ? 'text-primary'
                       : 'text-white md:text-secondary'
                   }`}
                   aria-current='page'>
                   Contacto
                   <span
-                    className={`absolute left-1/2 bottom-0 w-0 h-0.5 bg-primary transition-all duration-300 group-hover:w-full group-hover:left-0 ${
-                      location.pathname === '/contacto' ? 'w-full left-0' : ''
+                    className={`absolute bottom-0 h-0.5 bg-primary transition-all duration-300 group-hover:w-full group-hover:left-0 group-hover:translate-x-0 ${
+                      location.pathname === '/contacto'
+                        ? 'w-full left-0 translate-x-0'
+                        : 'w-0 left-1/2 -translate-x-1/2'
                     }`}></span>
                 </Link>
               </li>

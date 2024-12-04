@@ -3,7 +3,7 @@ import { servicesData } from '../data/data';
 
 const Services = () => {
   return (
-    <div className='text-secondary mt-4'>
+    <div className='text-secondary mt-6'>
       <div className='text-center'>
         <h1 className='text-3xl uppercase'>Servicios</h1>
       </div>

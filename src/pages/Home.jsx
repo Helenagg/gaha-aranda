@@ -1,4 +1,6 @@
 import Cover from "../components/Cover"
+import About from "./About"
+import Products from "./Products"
 import Services from "./Services"
 
 const Home = () => {
@@ -6,6 +8,8 @@ const Home = () => {
     <>
       <Cover />
       <Services />
+      <Products />
+      <About />
     </>
   )
 }

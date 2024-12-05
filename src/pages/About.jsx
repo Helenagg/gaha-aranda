@@ -1,7 +1,9 @@
 import TimeLine from '../components/TimeLine';
+import Contact from './Contact';
 
 const About = () => {
   return (
+    <>
     <section id='about' className='py-20 bg-white'>
       <div className='max-w-7xl mx-auto px-4 sm:px-6'>
         <div className='text-center mb-16'>
@@ -16,6 +18,8 @@ const About = () => {
         <TimeLine />
       </div>
     </section>
+    <Contact />
+    </>
   );
 };
 

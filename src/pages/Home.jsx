@@ -1,5 +1,6 @@
 import Cover from "../components/Cover"
 import About from "./About"
+import Contact from "./Contact"
 import Products from "./Products"
 import Services from "./Services"
 
@@ -10,6 +11,7 @@ const Home = () => {
       <Services />
       <Products />
       <About />
+      <Contact />
     </>
   )
 }

@@ -1,4 +1,4 @@
-import { MdOutlineDesignServices } from 'react-icons/md';
+import { MdMarkEmailRead, MdOutlineDesignServices } from 'react-icons/md';
 import { MdOutlineEngineering } from 'react-icons/md';
 import { GrValidate } from 'react-icons/gr';
 import { MdApproval } from 'react-icons/md';
@@ -10,6 +10,9 @@ import { BsAirplaneEngines } from 'react-icons/bs';
 import { BsAirplane } from 'react-icons/bs';
 import { GiMilitaryAmbulance } from 'react-icons/gi';
 import { GiDeliveryDrone } from 'react-icons/gi';
+import { FaPhoneVolume } from "react-icons/fa6";
+import { MdPlace } from "react-icons/md";
+import { MdOutlineMarkEmailRead } from "react-icons/md";
 
 export const servicesData = [
   {
@@ -88,3 +91,21 @@ export const productsData = [
     icon: GiDeliveryDrone,
   },
 ];
+
+export const contactData = [
+  {
+    title: 'Teléfono de contacto',
+    content: '954 519 009',
+    icon: FaPhoneVolume
+  },
+  {
+    title: 'Correo electrónico',
+    content: 'info@gaha-aranda.com',
+    icon: MdMarkEmailRead
+  },
+  {
+    title: 'Dirección',
+    content: 'Calle Eúfrates, 12 41020 Sevilla',
+    icon: MdPlace
+  },
+]

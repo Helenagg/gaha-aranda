@@ -10,6 +10,11 @@ import Contact from './pages/Contact';
 import Footer from './components/Footer';
 import Legal from './pages/Legal';
 import Privacy from './pages/Privacy';
+import Accessibility from './pages/Accessibility';
+
+//TODO: ScrollToTop
+//TODO: Navbar Mobile
+//TODO: Responsive
 
 function App() {
   return (
@@ -23,6 +28,7 @@ function App() {
         <Route path='/contacto' element={<Contact />} />
         <Route path='/aviso-legal' element={<Legal />} />
         <Route path='/privacidad' element={<Privacy />} />
+        <Route path='/accesibilidad' element={<Accessibility />} />
       </Routes>
       <Footer />
     </>

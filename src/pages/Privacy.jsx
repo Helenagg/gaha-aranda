@@ -1,4 +1,5 @@
 import { Link } from 'react-router-dom';
+import AccessibleLink from '../components/Accessibility/AccessibleLink';
 
 const Privacy = () => {
   return (
@@ -89,11 +90,11 @@ const Privacy = () => {
           corresponda si considera que sus datos no han sido tratados
           correctamente según la legislación vigente: AGENCIA ESPAÑOLA DE
           PROTECCIÓN DE DATOS{' '}
-          <Link
+          <AccessibleLink
             aria-label='Ir a agencia española de protección de datos'
             to='https://www.aepd.es/'>
             www.agpd.es
-          </Link>
+          </AccessibleLink>
         </p>
         <h2 className='mt-10 text-xl text-primary font-bold'>
           ACEPTACIÓN Y CONSENTIMIENTO:

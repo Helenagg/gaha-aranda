@@ -13,6 +13,7 @@ import Privacy from './pages/Privacy';
 import Accessibility from './pages/Accessibility';
 import Cookies from './pages/Cookies';
 import CookiesBanner from './components/CookiesBanner';
+import ScrollToTop from './components/ScrollToTop';
 
 //TODO: ScrollToTop
 //TODO: Navbar Mobile
@@ -22,6 +23,7 @@ import CookiesBanner from './components/CookiesBanner';
 function App() {
   return (
     <>
+      <ScrollToTop />
       <Navbar />
       <Routes>
         <Route path='/' element={<Home />} />

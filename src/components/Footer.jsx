@@ -1,4 +1,3 @@
-import { Link } from 'react-router-dom';
 import { FaFacebookF } from 'react-icons/fa6';
 import { FaXTwitter } from 'react-icons/fa6';
 import { FaInstagram } from 'react-icons/fa6';
@@ -6,6 +5,7 @@ import { FaLinkedinIn } from 'react-icons/fa6';
 import { FaPhoneVolume } from 'react-icons/fa6';
 import { MdPlace } from 'react-icons/md';
 import { MdOutlineMarkEmailRead } from 'react-icons/md';
+import AccessibleLink from './Accessibility/AccessibleLink';
 
 const Footer = () => {
   return (
@@ -16,47 +16,56 @@ const Footer = () => {
             <span>Conecta con nostros en redes sociales: </span>
           </div>
           <div className='flex justify-center'>
-            <Link to='/' className='me-6'>
+            <AccessibleLink
+              to='/'
+              className='me-6'
+              aria-label='Página de Facebook'>
               <FaFacebookF />
-            </Link>
-            <Link to='/' className='me-6'>
+            </AccessibleLink>
+            <AccessibleLink to='/' className='me-6' aria-label='Página de X'>
               <FaXTwitter />
-            </Link>
-            <Link to='/' className='me-6'>
+            </AccessibleLink>
+            <AccessibleLink
+              to='/'
+              className='me-6'
+              aria-label='Página de Instagram'>
               <FaInstagram />
-            </Link>
-            <Link to='/' className='me-6'>
+            </AccessibleLink>
+            <AccessibleLink
+              to='/'
+              className='me-6'
+              aria-label='Página de Linkedin'>
               <FaLinkedinIn />
-            </Link>
+            </AccessibleLink>
           </div>
         </div>
 
         <div className='mx-6 py-10 text-center md:text-left'>
           <div className='grid-1 grid gap-8 md:grid-cols-2 lg:grid-cols-4'>
             <div className=''>
-              <Link to='/'>
+              <AccessibleLink to='/'>
                 <img
-                  src='../../public/assets/img/logo-gaha.png'
+                  src='/assets/img/logo-gaha.png'
                   alt='Logo Gaha Aranda'
                   className='md:ml-4'
                 />
-              </Link>
+              </AccessibleLink>
             </div>
             <div>
               <h6 className='mb-4 flex justify-center font-semibold uppercase md:justify-start'>
                 Secciones
               </h6>
               <p className='mb-4'>
-                <Link to='servicios'>Servicios</Link>
+                <AccessibleLink to='servicios'>Servicios</AccessibleLink>
               </p>
               <p className='mb-4'>
-                <Link to='/productos'>Productos</Link>
+                <AccessibleLink to='/productos'>Productos</AccessibleLink>
               </p>
               <p className='mb-4'>
-                <Link to='/nosotros'>Nosotros</Link>
+                <AccessibleLink to='/nosotros'>Nosotros</AccessibleLink>
               </p>
               <p>
-                <Link to='/contacto'>Contacto</Link>
+                <AccessibleLink to='/contacto'>Contacto</AccessibleLink>
               </p>
             </div>
             <div>
@@ -64,16 +73,22 @@ const Footer = () => {
                 Legal
               </h6>
               <p className='mb-4'>
-                <Link to='/aviso-legal'>Aviso Legal</Link>
+                <AccessibleLink to='/aviso-legal'>Aviso Legal</AccessibleLink>
               </p>
               <p className='mb-4'>
-                <Link to='/privacidad'>Política de privacidad</Link>
+                <AccessibleLink to='/privacidad'>
+                  Política de privacidad
+                </AccessibleLink>
               </p>
               <p className='mb-4'>
-                <Link to='/cookies'>Política de cookies</Link>
+                <AccessibleLink to='/cookies'>
+                  Política de cookies
+                </AccessibleLink>
               </p>
               <p>
-                <Link to='/accesibilidad'>Declaración de accesibilidad</Link>
+                <AccessibleLink to='/accesibilidad'>
+                  Declaración de accesibilidad
+                </AccessibleLink>
               </p>
             </div>
             <div>
@@ -104,7 +119,7 @@ const Footer = () => {
 
         <div className='text-center flex justify-center items-center mt-2 border-t border-gray-400 p-4'>
           <img
-            src='/public/assets/img/logo-fondos-europeos-blanco.jpeg'
+            src='/assets/img/logo-fondos-europeos-blanco.jpeg'
             alt='Logo Kit Digital'
           />
         </div>

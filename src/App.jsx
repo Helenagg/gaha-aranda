@@ -7,6 +7,7 @@ import Services from './pages/Services';
 import Products from './pages/Products';
 import About from './pages/About';
 import Contact from './pages/Contact';
+import Footer from './components/Footer';
 
 function App() {
   return (
@@ -19,6 +20,7 @@ function App() {
         <Route path='/nosotros' element={<About />} />
         <Route path='/contacto' element={<Contact />} />
       </Routes>
+      <Footer />
     </>
   );
 }

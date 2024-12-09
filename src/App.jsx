@@ -15,8 +15,6 @@ import Cookies from './pages/Cookies';
 import CookiesBanner from './components/CookiesBanner';
 import ScrollToTop from './components/ScrollToTop';
 
-//TODO: Navbar Mobile
-//TODO: Responsive
 //TODO: use of cookies
 
 function App() {

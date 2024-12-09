@@ -43,7 +43,7 @@ const Footer = () => {
         <div className='mx-6 py-10 text-center md:text-left'>
           <div className='grid-1 grid gap-8 md:grid-cols-2 lg:grid-cols-4'>
             <div className=''>
-              <AccessibleLink to='/'>
+              <AccessibleLink to='/' className='focus:outline-none'>
                 <img
                   src='/assets/img/logo-gaha.png'
                   alt='Logo Gaha Aranda'
@@ -56,16 +56,16 @@ const Footer = () => {
                 Secciones
               </h6>
               <p className='mb-4'>
-                <AccessibleLink to='servicios'>Servicios</AccessibleLink>
+                <AccessibleLink to='servicios' className='focus:outline-none'>Servicios</AccessibleLink>
               </p>
               <p className='mb-4'>
-                <AccessibleLink to='/productos'>Productos</AccessibleLink>
+                <AccessibleLink to='/productos' className='focus:outline-none'>Productos</AccessibleLink>
               </p>
               <p className='mb-4'>
-                <AccessibleLink to='/nosotros'>Nosotros</AccessibleLink>
+                <AccessibleLink to='/nosotros' className='focus:outline-none'>Nosotros</AccessibleLink>
               </p>
               <p>
-                <AccessibleLink to='/contacto'>Contacto</AccessibleLink>
+                <AccessibleLink to='/contacto' className='focus:outline-none'>Contacto</AccessibleLink>
               </p>
             </div>
             <div>
@@ -73,20 +73,20 @@ const Footer = () => {
                 Legal
               </h6>
               <p className='mb-4'>
-                <AccessibleLink to='/aviso-legal'>Aviso Legal</AccessibleLink>
+                <AccessibleLink to='/aviso-legal' className='focus:outline-none'>Aviso Legal</AccessibleLink>
               </p>
               <p className='mb-4'>
-                <AccessibleLink to='/privacidad'>
+                <AccessibleLink to='/privacidad' className='focus:outline-none'>
                   Política de privacidad
                 </AccessibleLink>
               </p>
               <p className='mb-4'>
-                <AccessibleLink to='/cookies'>
+                <AccessibleLink to='/cookies' className='focus:outline-none'>
                   Política de cookies
                 </AccessibleLink>
               </p>
               <p>
-                <AccessibleLink to='/accesibilidad'>
+                <AccessibleLink to='/accesibilidad' className='focus:outline-none'>
                   Declaración de accesibilidad
                 </AccessibleLink>
               </p>

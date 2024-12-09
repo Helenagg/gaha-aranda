@@ -11,10 +11,13 @@ import Footer from './components/Footer';
 import Legal from './pages/Legal';
 import Privacy from './pages/Privacy';
 import Accessibility from './pages/Accessibility';
+import Cookies from './pages/Cookies';
+import CookiesBanner from './components/CookiesBanner';
 
 //TODO: ScrollToTop
 //TODO: Navbar Mobile
 //TODO: Responsive
+//TODO: use of cookies
 
 function App() {
   return (
@@ -29,7 +32,9 @@ function App() {
         <Route path='/aviso-legal' element={<Legal />} />
         <Route path='/privacidad' element={<Privacy />} />
         <Route path='/accesibilidad' element={<Accessibility />} />
+        <Route path='/cookies' element={<Cookies />} />
       </Routes>
+      <CookiesBanner />
       <Footer />
     </>
   );

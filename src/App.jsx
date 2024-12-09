@@ -8,6 +8,8 @@ import Products from './pages/Products';
 import About from './pages/About';
 import Contact from './pages/Contact';
 import Footer from './components/Footer';
+import Legal from './pages/Legal';
+import Privacy from './pages/Privacy';
 
 function App() {
   return (
@@ -19,6 +21,8 @@ function App() {
         <Route path='/productos' element={<Products />} />
         <Route path='/nosotros' element={<About />} />
         <Route path='/contacto' element={<Contact />} />
+        <Route path='/aviso-legal' element={<Legal />} />
+        <Route path='/privacidad' element={<Privacy />} />
       </Routes>
       <Footer />
     </>
